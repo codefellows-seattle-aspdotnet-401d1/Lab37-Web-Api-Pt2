@@ -44,7 +44,6 @@ namespace Week8Tom.Controllers
         //POST
         //Model binding
         [HttpPost]
-   
         public async Task<IActionResult> Post([FromBody]HeroStats stat)
         {
             await _context.AddAsync(stat);
@@ -54,6 +53,21 @@ namespace Week8Tom.Controllers
         }
 
         //PUT
+        [HttpPut("{id:int}")]
+        public async Task<IActionResult> Put(int id, [FromBody]HeroStats stat)
+        {
+            var check = _context.HeroStats.FirstOrDefault(p => p.Id == id);
+            if (check != null)
+            {
+                //checks to see if stats are the same and updates
+                check.Alias = stat.Alias;
+                check.Name = stat.Name;
+                _context.Update(check);
+                await _context.SaveChangesAsync();
+            }
+            return Ok();
+        }
+
 
         //DELETE
     }
