@@ -20,7 +20,16 @@ namespace lab36_miya.Controllers
             _context = context;
         }
 
-        ////Get
+        //Get
+        //this Get was added in order to view all items in the database at once with a single get request(not including an ID)
+        [HttpGet]
+        [Produces("application/json")]
+        public IEnumerable<RequiredCoursework> Get()
+        {
+            return _context.RequiredCoursework;
+        }
+
+        //Get
         //below is an example of model binding with id constraints which are optional
         [HttpGet ("{id:int?}")]
         public IActionResult Get(int id)
@@ -45,7 +54,41 @@ namespace lab36_miya.Controllers
         }
 
         //Put - updates something to the resource or creates resource
+        [HttpPut("{id:int}")]
+        public async Task<IActionResult> Put(int id, [FromBody] RequiredCoursework requirement)
+        {
+            //this will test to see if the model state coming in meets the requirements placed on the model using data annotations/model binding
+            if (!ModelState.IsValid)
+            {
+                BadRequest(ModelState);
+            }
+
+            var check = _context.RequiredCoursework.FirstOrDefault(v => v.ID == id);
+
+            if (check != null)
+            {
+                check.Class = requirement.Class;
+                check.IsComplete = requirement.IsComplete;
+                _context.Update(check);
+                await _context.SaveChangesAsync();
+                return Ok();
+            }
+            return BadRequest();
+        }
 
         //Delete
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var result = _context.RequiredCoursework.FirstOrDefault(w => w.ID == id);
+
+            if(result != null)
+            {
+                _context.RequiredCoursework.Remove(result);
+                await _context.SaveChangesAsync();
+                return Ok();
+            }
+            return BadRequest();
+        }
     }
 }
