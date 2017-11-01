@@ -20,6 +20,15 @@ namespace Week8Tom.Controllers
             _context = context;
         }
 
+        //Gets all heroes in the database
+        [HttpGet]
+        [Produces("application/json")]
+        public IEnumerable<HeroStats> Get()
+        {
+            return _context.HeroStats;
+
+        }
+
         //GET
         //Id constraint
         [HttpGet("{id:int?}")]
@@ -35,7 +44,7 @@ namespace Week8Tom.Controllers
         //POST
         //Model binding
         [HttpPost]
-        [ValidateAntiForgeryToken]
+   
         public async Task<IActionResult> Post([FromBody]HeroStats stat)
         {
             await _context.AddAsync(stat);
