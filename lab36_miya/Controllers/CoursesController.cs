@@ -32,6 +32,8 @@ namespace lab36_miya.Controllers
         //Get
         //below is an example of model binding with id constraints which are optional
         [HttpGet ("{id:int?}")]
+        //adding this form of content negotiation in the hopes that it will restrict this Get method to only produce results in XML
+        [Produces("application/xml")]
         public IActionResult Get(int id)
         {
             //storing a LINQ query containing a lambda statement within an anonymous variable
@@ -73,6 +75,11 @@ namespace lab36_miya.Controllers
                 await _context.SaveChangesAsync();
                 return Ok();
             }
+            //attempting to find a way to use Put when an item is not there to be replaced
+            //else if(check == null)
+            //{
+            //   await Post(check);
+            //}
             return BadRequest();
         }
 
