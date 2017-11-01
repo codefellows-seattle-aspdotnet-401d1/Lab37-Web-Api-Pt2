@@ -20,10 +20,10 @@
 
 ## ReadMe
 - Your readme should include the following information:
-	- How long did it take you to complete this assignment?
-	- What did you struggle with? Why? How did you solve?
-	- What did you learn during this assignment?
-    - What resources did you utilize for this assingment?
+	- How long did it take you to complete this assignment? 1.5 hours
+	- What did you struggle with? Why? How did you solve? I struggled with getting my Put action to work properly. It will replace an existing item but will not create an item if nothing exists at a certain ID.
+	- What did you learn during this assignment? I learned which of my actions require an int to be passed in and why that's necessary.
+    - What resources did you utilize for this assingment? the notes I took during yesterday's lecture
 
 ## Rubric
 - 4pts: 5 actions (Get (all), Get(id), Post, Put, Delete) properly implemented and working
