@@ -20,14 +20,13 @@ namespace Week8Tom.Controllers
             _context = context;
         }
 
-        //Gets all heroes in the database
         [HttpGet]
         //Content negotiation that ensures Get only produces JSON
         [Produces("application/json")]
+        //Gets all heroes in the database
         public IEnumerable<HeroStats> Get()
         {
             return _context.HeroStats;
-
         }
 
         //GET
