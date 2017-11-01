@@ -64,11 +64,25 @@ namespace Week8Tom.Controllers
                 check.Name = stat.Name;
                 _context.Update(check);
                 await _context.SaveChangesAsync();
+                return Ok();
             }
-            return Ok();
+            return BadRequest();
         }
 
 
         //DELETE
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var result = _context.HeroStats.FirstOrDefault(d => d.Id == id);
+            if (result != null)
+            {
+                //Remove selected Id and all associated data
+                _context.HeroStats.Remove(result);
+                await _context.SaveChangesAsync();
+                return Ok();
+            }
+            return BadRequest();
+        }
     }
 }
