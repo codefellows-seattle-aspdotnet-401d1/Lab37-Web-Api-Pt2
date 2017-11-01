@@ -22,6 +22,7 @@ namespace Week8Tom.Controllers
 
         //Gets all heroes in the database
         [HttpGet]
+        //Content negotiation that ensures Get only produces JSON
         [Produces("application/json")]
         public IEnumerable<HeroStats> Get()
         {

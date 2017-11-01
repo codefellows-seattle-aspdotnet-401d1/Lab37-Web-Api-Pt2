@@ -27,7 +27,7 @@ namespace Week8Tom
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc()
-                .AddXmlDataContractSerializerFormatters();
+                .AddXmlDataContractSerializerFormatters(); //Adding Xml as an option
 
             services.AddDbContext<HeroStatsDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
         }
