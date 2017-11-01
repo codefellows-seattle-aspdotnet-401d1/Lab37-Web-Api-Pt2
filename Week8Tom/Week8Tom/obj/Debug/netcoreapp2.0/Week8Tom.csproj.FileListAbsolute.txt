@@ -8,3 +8,4 @@ C:\Users\Tom\source\repos\Lab37-Web-Api-Pt2\Week8Tom\Week8Tom\obj\Debug\netcorea
 C:\Users\Tom\source\repos\Lab37-Web-Api-Pt2\Week8Tom\Week8Tom\obj\Debug\netcoreapp2.0\Week8Tom.AssemblyInfo.cs
 C:\Users\Tom\source\repos\Lab37-Web-Api-Pt2\Week8Tom\Week8Tom\obj\Debug\netcoreapp2.0\Week8Tom.dll
 C:\Users\Tom\source\repos\Lab37-Web-Api-Pt2\Week8Tom\Week8Tom\obj\Debug\netcoreapp2.0\Week8Tom.pdb
+C:\Users\Tom\source\repos\Lab37-Web-Api-Pt2\Week8Tom\Week8Tom\obj\Debug\netcoreapp2.0\Week8Tom.csprojResolveAssemblyReference.cache

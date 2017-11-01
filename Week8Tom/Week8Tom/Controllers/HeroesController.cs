@@ -56,6 +56,11 @@ namespace Week8Tom.Controllers
         [HttpPut("{id:int}")]
         public async Task<IActionResult> Put(int id, [FromBody]HeroStats stat)
         {
+            if (!ModelState.IsValid)
+            {
+                //returns error of model state if it isn't valid
+                return BadRequest(ModelState);
+            }
             var check = _context.HeroStats.FirstOrDefault(p => p.Id == id);
             if (check != null)
             {
