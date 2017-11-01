@@ -73,13 +73,13 @@ namespace lab36_miya.Controllers
                 check.IsComplete = requirement.IsComplete;
                 _context.Update(check);
                 await _context.SaveChangesAsync();
-                return Ok();
+                return CreatedAtAction("Get", new { id = requirement.ID }, requirement);
             }
             //attempting to find a way to use Put when an item is not there to be replaced
-            //else if(check == null)
-            //{
-            //   await Post(check);
-            //}
+            else if (check == null)
+            {
+                await Post(requirement);
+            }
             return BadRequest();
         }
 
