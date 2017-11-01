@@ -1,0 +1,11 @@
+C:\Users\Duane Rush\source\repos\Lab37-Web-Api-Pt2\Lab37Api\Lab37Api\bin\Debug\netcoreapp2.0\Lab37Api.deps.json
+C:\Users\Duane Rush\source\repos\Lab37-Web-Api-Pt2\Lab37Api\Lab37Api\bin\Debug\netcoreapp2.0\Lab37Api.runtimeconfig.json
+C:\Users\Duane Rush\source\repos\Lab37-Web-Api-Pt2\Lab37Api\Lab37Api\bin\Debug\netcoreapp2.0\Lab37Api.runtimeconfig.dev.json
+C:\Users\Duane Rush\source\repos\Lab37-Web-Api-Pt2\Lab37Api\Lab37Api\bin\Debug\netcoreapp2.0\Lab37Api.dll
+C:\Users\Duane Rush\source\repos\Lab37-Web-Api-Pt2\Lab37Api\Lab37Api\obj\Debug\netcoreapp2.0\Lab37Api.csprojResolveAssemblyReference.cache
+C:\Users\Duane Rush\source\repos\Lab37-Web-Api-Pt2\Lab37Api\Lab37Api\obj\Debug\netcoreapp2.0\Lab37Api.csproj.CoreCompileInputs.cache
+C:\Users\Duane Rush\source\repos\Lab37-Web-Api-Pt2\Lab37Api\Lab37Api\obj\Debug\netcoreapp2.0\Lab37Api.AssemblyInfoInputs.cache
+C:\Users\Duane Rush\source\repos\Lab37-Web-Api-Pt2\Lab37Api\Lab37Api\obj\Debug\netcoreapp2.0\Lab37Api.AssemblyInfo.cs
+C:\Users\Duane Rush\source\repos\Lab37-Web-Api-Pt2\Lab37Api\Lab37Api\bin\Debug\netcoreapp2.0\Lab37Api.pdb
+C:\Users\Duane Rush\source\repos\Lab37-Web-Api-Pt2\Lab37Api\Lab37Api\obj\Debug\netcoreapp2.0\Lab37Api.dll
+C:\Users\Duane Rush\source\repos\Lab37-Web-Api-Pt2\Lab37Api\Lab37Api\obj\Debug\netcoreapp2.0\Lab37Api.pdb
