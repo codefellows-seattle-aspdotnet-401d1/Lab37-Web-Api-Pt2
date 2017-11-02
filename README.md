@@ -1,29 +1,19 @@
-![cf](http://i.imgur.com/7v5ASc8.png) Lab37-WebAPI-Pt2
-=====================================
 
-## To Submit this Assignment
-- fork this repository
-- write all of your code in a directory named `lab-#`; + `<your name>` **e.g.** `lab36-amanda`
-- push to your repository
-- submit a pull request to this repository
-- submit a link to your PR in canvas
-
-## Directions 
-- Building off of Lab 36, 
-  - Add a PUT, POST, & DELETE action to your main controller.
-  - Whenever you are updating or adding data to your database, make sure the ModelState is valid. if it is not, return a bad request
-  - Create a GET action that "gets all" of the values you have saved
-  - Incorporate content Negotiation into your application, require that one of your controllers produces XML, restrict another to only use JSON.(*hint - don't forget about the services you have to add to the Startup.cs class*)
-  
--  COMMENT your code. Clearly. Identify the above requirements within your code. It is important that ALL The code written in this project is yours and you comment exaclty what/why everything is going on. 
-- Use Postman to test your API.
 
 ## ReadMe
 - Your readme should include the following information:
 	- How long did it take you to complete this assignment?
+	3 hours took this long due to starting over and taking my time.
+
 	- What did you struggle with? Why? How did you solve?
+	No struggle just worked my way back through the build using the demo when needed to 
+	progress forward.
+
 	- What did you learn during this assignment?
+	Learned more about implementing the RESTful methods for a web api
+
     - What resources did you utilize for this assingment?
+	The demo code and the Web api reading microsoft docs.
 
 ## Rubric
 - 4pts: 5 actions (Get (all), Get(id), Post, Put, Delete) properly implemented and working
