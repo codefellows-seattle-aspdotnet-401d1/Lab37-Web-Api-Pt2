@@ -29,6 +29,7 @@ namespace Lab37George.Controllers
 
         // Get all
         [HttpGet]
+        [Produces("application/XML")]
         public IEnumerable<Parts> Get()
         {
             // just grabs all the items in the database (I couldn't resist after class today)
