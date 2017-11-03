@@ -21,7 +21,7 @@ namespace Lab37George
         public void ConfigureServices(IServiceCollection services)
         {
             // adding mvc
-            services.AddMvc().AddXmlDataContractSerializerFormatters;
+            services.AddMvc().AddXmlDataContractSerializerFormatters();
             // reference to the database connection string\
             // I don't remember how to comment json, but this pulls from the appsetting.json that I created
             services.AddDbContext<PartsDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
